@@ -12,7 +12,7 @@ OTHER_JARS = "$(QUERY_PLUGIN_PATH)BIMserver-query-plugin-shell.jar:$(MIRAH_PARSE
 
 # Build directories
 
-PACKAGE_DIR = src/net/flaviusb/bim/mvd/
+PACKAGE_DIR = net/flaviusb/bim/mvd/
 
 TEMP_DIR = temp/
 
@@ -25,7 +25,7 @@ OUTPUT_MVD_JAR = mvd-macros.jar
 $(OUTPUT_MVD_JAR): $(MIRAH_TARGETS)
 	mkdir -p "$(ARTIFACTS)"
 	mirahc -classpath "$(BIMSERVER_JARS):$(OTHER_JARS)" -d "$(ARTIFACTS)" $(MIRAH_TARGETS)
-	cp -R META-INF "$(ARTIFACTS)"
+	cp -R prebuilt/META-INF "$(ARTIFACTS)"
 	cd "$(ARTIFACTS)" && jar cf mvd.jar * && cd -
 	mv "$(ARTIFACTS)"mvd.jar "$(OUTPUT_MVD_JAR)"
 
