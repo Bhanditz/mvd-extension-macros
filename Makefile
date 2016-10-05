@@ -2,13 +2,13 @@
 
 BIMSERVER_PATH = BIMserver/
 
-BIMSERVER_JARS = "$(BIMSERVER_PATH)org.eclipse.emf.common_2.9.1.v20130827-0309.jar:$(BIMSERVER_PATH)org.eclipse.emf_2.6.0.v20130902-0605.jar:$(BIMSERVER_PATH)org.eclipse.emf.ecore_2.9.1.v20130827-0309.jar:$(BIMSERVER_PATH)bimserver-1.4.0-FINAL-2015-11-04-shared.jar:$(BIMSERVER_PATH)bimserver-1.4.0-FINAL-2015-11-04.jar:$(BIMSERVER_PATH)commons-io-1.4.jar:$(BIMSERVER_PATH)guava-18.0.jar"
+BIMSERVER_JARS = $(BIMSERVER_PATH)org.eclipse.emf.common_2.9.1.v20130827-0309.jar:$(BIMSERVER_PATH)org.eclipse.emf_2.6.0.v20130902-0605.jar:$(BIMSERVER_PATH)org.eclipse.emf.ecore_2.9.1.v20130827-0309.jar:$(BIMSERVER_PATH)bimserver-1.4.0-FINAL-2015-11-04-shared.jar:$(BIMSERVER_PATH)bimserver-1.4.0-FINAL-2015-11-04.jar:$(BIMSERVER_PATH)commons-io-1.4.jar:$(BIMSERVER_PATH)guava-18.0.jar
 
 QUERY_PLUGIN_PATH = ../BIMserver-query-plugin-shell/
 
 MIRAH_PARSER_PATH = mirah/dist/
 
-OTHER_JARS = "$(QUERY_PLUGIN_PATH)BIMserver-query-plugin-shell.jar:$(MIRAH_PARSER_PATH)mirah-parser.jar"
+OTHER_JARS = "$(QUERY_PLUGIN_PATH)BIMserver-query-plugin-shell.jar:$(MIRAH_PARSER_PATH)mirahc.jar"
 
 # Build directories
 
